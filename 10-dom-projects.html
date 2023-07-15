@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>DOM-PROJECTS</title>
+</head>
+
+<body class="body-content">
+
+    <p id="title">Click Below to Subscribe:</p>
+    <button onclick=" Subscribe();
+        " class="js-subscribe-button subs-btn">
+        Subscribe
+    </button>
+    <p>GAMES ||
+        <a href="/Styles/Rock Paper Scissors/index.html" target="_blank" title="Play Here" id="game-btn">Paper, Rock
+            Scissors Vr.1</a>
+    </p>
+
+    <p>---
+    <p>GAMES ||
+        <a href="/Styles/12-rock-paper-scissors.html" target="_blank" title="Play Here" id="game-btn">Paper, Rock
+            Scissors Vr.2</a>
+    </p>
+
+
+    <p>---
+    <p>TODO LIST ||
+        <a href="/Styles/11-Todo.html" target="_blank" title="Todo List" id="todo-btn">ToDo List</a>
+    </p>
+
+
+    <p>Amazon Shipping Calculator</p>
+
+    <p>Order Obove $50 = $10</p>
+
+    <p>Orders Below $50 = FREE Shipping</p>
+    <input type="number" placeholder="Order Cost" class="js-cost-input cost-input" onkeydown="
+        handleCostKeydown(event);
+    ">
+    <button onclick="
+    
+    calculateTotal();
+    
+    " class="calc-btn">Calculate</button>
+    <p class="js-total-cost"></p>
+
+
+
+    <script>
+
+        function handleCostKeydown(event) {
+            if (event.key === 'Enter') {
+                calculateTotal();
+            }
+        }
+
+        function calculateTotal() {
+            const inputElelment = document.querySelector('.js-cost-input');
+
+            let cost = Number(inputElelment.value);
+
+            if (cost > 50) {
+                cost = cost + 10;
+
+            }
+
+            document.querySelector('.js-total-cost')
+                .innerHTML = `$${cost}`;
+
+        }
+
+
+        function Subscribe() {
+            const buttonElement = document.querySelector
+
+                ('.js-subscribe-button');
+
+            if (buttonElement.innerText === 'Subscribe') {
+                buttonElement.innerHTML = 'Subscribed';
+                buttonElement.classList.add('is-subscribed');
+            } else {
+                buttonElement.innerHTML = 'Subscribe';
+                buttonElement.classList.remove('is-subscribed');
+            }
+
+        }
+    </script>
+</body>
+
+</html>

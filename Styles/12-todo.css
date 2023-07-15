@@ -1,0 +1,38 @@
+body {
+    font-family: 'Franklin Gothic Medium',  'Arial, sans-serif';
+}
+
+.todo-grid,
+.todo-input-grid {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 15px;
+    align-items: center;
+}
+.todo-input-grid{
+    margin-bottom: 15px;
+    align-items: stretch;
+}
+.name-input, 
+.date-input{
+    font-size: 16px;
+    padding: 6px;
+}
+.add-btn {
+    background-color: green;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.delete-btn {
+    background-color: darkred;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;       
+    padding-top: 10px;
+    padding-bottom: 10px;         
+     
+}

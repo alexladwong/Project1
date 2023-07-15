@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+ <!-- Booleans are another type of value in JavaScript -->
+ <!-- There are two values: true and false -->
+<body>
+
+
+    <script>
+    //    const product = {
+    //     name: "Socks",
+    //     // price: 1090
+    //     price: 100000
+    //    };
+    //    console.log(typeof product);
+    //    console.log(product.name);
+    //    console.log(product.price);
+
+    //    product.name = 'cotton socks';
+    //    console.log(product);
+
+    //    product.newProperty = "Jackets";
+    //    product.newProperty = true;
+    //    console.log(product); 
+
+    //    delete product.newProperty;
+    //    console.log(product);
+
+    /*
+    const product2 = {
+        name: 'shirt',
+        ['delivery-time']: '1 day 3hours',
+        'Delivery Company': 'DHL',
+        rating: {
+            stars: 4.6,
+            count:89,
+        },
+        func: function function1() {
+            console.log('function inside object');
+        }
+    };
+    console.log(product2);
+    console.log(product2.name);
+    console.log(product2['name']);
+    console.log(product2['delivery-time']);
+    console.log(product2['Delivery Company']);
+
+    console.log(product2.rating.stars);
+
+    product2.func();
+
+    console.log(typeof console.log);
+
+    // Convert Javascript to Json file
+        console.log(JSON.stringify(product2));
+
+    // Convert JSON file to Javascript file  
+    const jsonString = JSON.stringify(product2);  
+    console.log(JSON.parse(jsonString));
+    */
+
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase());
+
+    const object1 = {
+        message: 'hello!!'
+    };
+
+    const object2 = object1;
+
+    object1.message = 'Good Work Here!!';
+    console.log(object2);
+
+    const object3 = {
+        message: 'Good Job!'
+    };
+    console.log(object3 === object1);
+    console.log(object2 === object1);
+
+    // const {message} = object1;
+    // console.log(message);
+
+    const object4 = {
+        message: 'Good Job!',
+        price: 799,
+        travel: 'EBB-NYC'
+    };
+    // const message = object4.message;
+    const { message, price, travel } = object4;
+
+    console.log(message);
+    console.log(price);
+    console.log(travel);
+
+    // Shorthand/shorthand method
+    const object5 = {
+        message, 
+        method: function function1(){
+            console.log('method');
+        }
+    };
+    object5.method();
+    console.log(object5)
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(16, 3, 27);
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    word-spacing: 20px;
+}
+.icon-button {
+    height: 70px;   
+}
+/* .icon-button:hover {
+    height: 90px;
+    transition: smooth 33ms;
+} */
+.move-button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.score {
+    margin-top: 60px;
+}
+
+.reset-score-button, .auto-play {
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}

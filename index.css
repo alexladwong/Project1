@@ -1,0 +1,79 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-image: url(/CleanShot\ 2023-05-07\ at\ 22.27.20@2x.png); */
+    background: #fcfaf551;
+}
+
+#title{
+    font-size: 26px;
+}
+
+.subs-btn {
+    border: none;
+    background: #f92323;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.is-subscribed {
+    background: rgb(213, 212, 213);
+    color: #000;
+    border: solid 0.5px rgba(49, 50, 50, 0.276);
+}
+.cost-input {
+    font-size: 15px;
+    padding: 10px;
+    background: #f5fbfc;
+}
+
+#game-btn {
+    text-decoration: none;
+    color: white;
+    background: green;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+#todo-btn {
+    text-decoration: none;
+    color: white;
+    background: green;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    
+}
+#game-btn:hover{
+    background: rgb(213, 212, 213);
+    color: #000;
+    border: solid 0.5px rgba(49, 50, 50, 0.276);
+}
+#todo-btn:hover{
+    background: rgb(213, 212, 213);
+    color: #000;
+    border: solid 0.5px rgba(49, 50, 50, 0.276);
+}
+
+.calc-btn {
+    border: none;
+    background-color: green;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.is-calculated {
+    background-color: #ff4141;
+}
+.reset-score-button{
+    background: #000;
+    color: #f92323;
+}

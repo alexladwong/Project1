@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD_10-Rock-Paper-scissors</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+
+
+</head>
+
+<body>
+<p class="title">
+    Rock Paper Scissors
+</p>
+
+<!-- Rock buttons -->
+<button onclick="
+   playGame('Rock');
+" class="move-button">
+<img src="/rock-emoji.png" class="icon-button">
+</button>
+<!-- End of Rock button -->
+
+<!-- Paper Button -->
+<button onclick="
+     playGame('Paper');
+" class="move-button">
+<img src="/paper-emoji.png" class="icon-button">
+</button>
+<!-- End of Paper button -->
+
+<!-- scissors button -->
+<button onclick="
+   playGame('Scissors');
+" class="move-button">
+<img src="/scissors-emoji.png" class="icon-button">
+</button>
+<!-- End of Scissors button -->
+
+<p class="js-result result"></p>
+<p class="js-moves"></p>
+<p class="js-score score"></p>
+
+<!-- RESET BUTTON --> 
+<button onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElelment();
+" title="All Scores will be Lost..." class="reset-score-button">Reset All Score</button>
+
+
+    <script 
+        src="/Scripts/10-R-P-S.js">
+    </script>
+</body>
+</html>
